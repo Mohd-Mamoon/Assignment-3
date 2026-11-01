@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Scoreboard</title>
+
+<style>
+
+/* css variables */
+:root {
+    --primary-color: #184476c0;
+    --secondary-color: #154f38a1;
+    --header-color: #dce9f5;
+    --stripe-color: #f1f6fa;
+    --hover-color: #d5eddf;
+    --border-color: #b8c8d6;
+    --text-color: #263746;
+
+    --table-padding: 12px;
+    --font-size: 14px;
+    --heading-size: 22px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f6;
+    color: var(--text-color);
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* table styling */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    font-size: var(--font-size);
+    margin-top: 20px;
+}
+
+/* caption */
+caption {
+    font-size: var(--heading-size);
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: var(--table-padding);
+}
+
+/* table headers */
+th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--table-padding);
+    border: 1px solid var(--border-color);
+}
+
+/* table data */
+td {
+    padding: var(--table-padding);
+    text-align: center;
+    border: 1px solid var(--border-color);
+}
+
+td:nth-child(2) {
+    font-weight: bold;
+}
+
+.group-heading {
+    background-color: var(--secondary-color);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--stripe-color);
+}
+
+tbody tr:hover {
+    background-color: var(--hover-color);
+    transition: background-color 0.2s ease;
+}
+
+tfoot td {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 style="text-align: center; color: black;">Cricket Scoreboard</h1>
+
+<table>
+
+<caption style="text-align: center; font-weight: bold;">Champions Trophy - Match Scorecard</caption>
+
+<thead>
+
+<tr>
+    <th rowspan="2" scope="col">No.</th>
+    <th rowspan="2" scope="col">Player</th>
+    <th rowspan="2" scope="col">Team</th>
+
+    <th colspan="5" class="group-heading" scope="colgroup">
+        Batting Statistics
+    </th>
+
+    <th colspan="2" class="group-heading" scope="colgroup">
+        Match Details
+    </th>
+</tr>
+
+<tr>
+    <th scope="col">Runs</th>
+    <th scope="col">Balls</th>
+    <th scope="col">4s</th>
+    <th scope="col">6s</th>
+    <th scope="col">Strike Rate</th>
+    <th scope="col">Dismissal</th>
+    <th scope="col">Innings</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<!-- India -->
+ <tr style="background-color: var(--secondary-color); color: rgb(5, 5, 5); font-weight: bold;">
+    <td colspan="10">India</td> 
+</tr>
+<tr>
+<td>1</td>
+<td>Rohit Sharma</td>
+<td rowspan="10">India</td>
+<td>85</td>
+<td>67</td>
+<td>9</td>
+<td>3</td>
+<td>126.86</td>
+<td>Caught</td>
+<td rowspan="10">1st</td>
+</tr>
+
+<tr>
+<td>2</td><td>Shubman Gill</td>
+<td>42</td><td>38</td><td>5</td><td>1</td><td>110.52</td><td>Bowled</td>
+</tr>
+
+<tr>
+<td>3</td><td>Virat Kohli</td>
+<td>76</td><td>82</td><td>6</td><td>0</td><td>92.68</td><td>Caught</td>
+</tr>
+
+<tr>
+<td>4</td><td>Shreyas Iyer</td>
+<td>55</td><td>48</td><td>4</td><td>2</td><td>114.58</td><td>Not Out</td>
+</tr>
+
+<tr>
+<td>5</td><td>KL Rahul</td>
+<td>31</td><td>25</td><td>2</td><td>1</td><td>124.00</td><td>Run Out</td>
+</tr>
+
+<tr>
+<td>6</td><td>Hardik Pandya</td>
+<td>28</td><td>17</td><td>2</td><td>2</td><td>164.70</td><td>Caught</td>
+</tr>
+
+<tr>
+<td>7</td><td>Ravindra Jadeja</td>
+<td>18</td><td>14</td><td>1</td><td>0</td><td>128.57</td><td>Not Out</td>
+</tr>
+
+<tr>
+<td>8</td><td>Axar Patel</td>
+<td>12</td><td>10</td><td>1</td><td>0</td><td>120.00</td><td>Caught</td>
+</tr>
+
+<tr>
+<td>9</td><td>Kuldeep Yadav</td>
+<td>5</td><td>8</td><td>0</td><td>0</td><td>62.50</td><td>Bowled</td>
+</tr>
+
+<tr>
+<td>10</td><td>Mohammed Shami</td>
+<td>3</td><td>4</td><td>0</td><td>0</td><td>75.00</td><td>Not Out</td>
+</tr>
+
+<!-- Australia -->
+
+<tr style="background-color: var(--secondary-color); color: rgb(5, 5, 5); font-weight: bold;">
+    <td colspan="10">Australia</td>
+</tr>
+
+<tr>
+<td>11</td>
+<td>David Warner</td>
+<td rowspan="10">Australia</td>
+<td>65</td>
+<td>59</td>
+<td>7</td>
+<td>2</td>
+<td>110.16</td>
+<td>Caught</td>
+<td rowspan="10">2nd</td>
+</tr>
+
+<tr>
+<td>12</td><td>Travis Head</td>
+<td>48</td><td>35</td><td>5</td><td>2</td><td>137.14</td><td>Bowled</td>
+</tr>
+
+<tr>
+<td>13</td><td>Steve Smith</td>
+<td>72</td><td>80</td><td>6</td><td>1</td><td>90.00</td><td>Caught</td>
+</tr>
+
+<tr>
+<td>14</td><td>Marnus Labuschagne</td>
+<td>39</td><td>44</td><td>3</td><td>0</td><td>88.63</td><td>Run Out</td>
+</tr>
+
+<tr>
+<td>15</td><td>Glenn Maxwell</td>
+<td>45</td><td>27</td><td>3</td><td>3</td><td>166.66</td><td>Caught</td>
+</tr>
+
+<tr>
+<td>16</td><td>Mitchell Marsh</td>
+<td>22</td><td>19</td><td>2</td><td>1</td><td>115.78</td><td>Bowled</td>
+</tr>
+
+<tr>
+<td>17</td><td>Alex Carey</td>
+<td>30</td><td>28</td><td>2</td><td>1</td><td>107.14</td><td>Not Out</td>
+</tr>
+
+<tr>
+<td>18</td><td>Pat Cummins</td>
+<td>15</td><td>12</td><td>1</td><td>1</td><td>125.00</td><td>Caught</td>
+</tr>
+
+<tr>
+<td>19</td><td>Mitchell Starc</td>
+<td>8</td><td>9</td><td>1</td><td>0</td><td>88.88</td><td>Bowled</td>
+</tr>
+
+<tr>
+<td>20</td><td>Josh Hazlewood</td>
+<td>2</td><td>5</td><td>0</td><td>0</td><td>40.00</td><td>Not Out</td>
+</tr>
+
+</tbody>
+
+<tfoot>
+<tr>
+    <td colspan="3">Match Summary</td>
+    <td colspan="3">India: 355 Runs</td>
+    <td colspan="4">Australia: 346 Runs | India Won</td>
+</tr>
+
+<tr >
+    <td colspan="10" style="background-color: orange; color: rgb(5, 5, 5); font-weight: bold;"> Team India won the match </td>
+</tr>
+</tfoot>
+
+</table>
+
+</body>
+</html>
